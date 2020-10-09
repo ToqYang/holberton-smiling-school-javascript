@@ -1,12 +1,13 @@
 //  Dynamic quotes
 $( document ).ready(function() {
-    $( ".carousel-control-next" ).click(function() {
-        let islastactive = $( ".carousel-inner" ).children( ".carousel-item" ).last().hasClass( "active" );
+    $( ".quotesdyn" ).click(function() {
+        let islastactive = $( ".inner-quotes" ).children( ".carousel-item" ).last().hasClass( "active" );
 
         if (islastactive) {
             get_popular()
         }
     });
+
 });
 
 
@@ -73,13 +74,4 @@ function loading(wait) {
             $( ".loader" ).css("animation-play-state", "paused");
             $( ".carousel" ).show();
     }
-}
-
-
-/**
-* Delay for a number of milliseconds
-*/
-function sleep(delay) {
-    var start = new Date().getTime();
-    while (new Date().getTime() < start + delay);
 }
