@@ -2,7 +2,7 @@
 $( document ).ready(function() {
     choose_carousel(".carousel-qu", ".quotesdyn", ".inner-quotes", "https://smileschool-api.hbtn.info/quotes", make_quotes, '.loader-quotes');
     choose_carousel(".carousel-pv", ".popular-videos", ".popular-inner", "https://smileschool-api.hbtn.info/popular-tutorials", make_popvideos, '.loader-popular');
-
+    choose_carousel(".carousel-lv", ".lt-event", ".inner-lt", "https://smileschool-api.hbtn.info/latest-videos", make_popvideos, '.ld-latest');
 });
 
 
